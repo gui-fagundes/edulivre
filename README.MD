@@ -24,7 +24,9 @@ Sistema completo de gerenciamento de cursos online com:
 ### Passo a Passo
 1. **Banco de Dados**:
    ```bash
-   psql -U postgres -f edulivre.sql
+   psql -U "seu_usuario" -h localhost -p 5432
+   "sua_senha"
+   \i edulivre.sql
    ```
 
 2. **Configuração**:
