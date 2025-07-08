@@ -7,9 +7,6 @@ public class Usuario {
     private String senha;
     private String perfil;
 
-
-
-    
     public int getId() {
         return id;
     }
@@ -48,10 +45,5 @@ public class Usuario {
 
     public void setPerfil(String perfil) {
         this.perfil = perfil;
-    }
-
-
-
-
-    
+    }    
 }

@@ -5,23 +5,22 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoPostgreSql {
-    private String database;
-    private String username;
-    private String password;
-    private String port;
-    private String host;
+    private final String database;
+    private final String username;
+    private final String password;
+    private final String port;
+    private final String host;
 
     public ConexaoPostgreSql(){
         this.host = "localhost";
         this.username = "postgres";
         this.password = "postgres";
         this.port = "5432";
-        this.database = "teste";
+        this.database = "edulivre";
     }
 
     public Connection getConexao() throws SQLException{
         String url = "jdbc:postgresql://"+this.host+":"+this.port+"/"+this.database;
         return DriverManager.getConnection(url, username, password);
     }
-
 }
