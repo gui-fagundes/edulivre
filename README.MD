@@ -107,5 +107,3 @@ new MatriculaDAO().adicionarComentarioAvaliacao(1, comentario);
 
 
 ---
-
-**Licença MIT** © 2024 - [Seu Nome]
